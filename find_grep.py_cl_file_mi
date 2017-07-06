@@ -1,0 +1,6 @@
+find_grep.py --print_all_filenames --filename_mask .py$ --search_string columnize\(
+find_grep.py --filename_mask .py$ --search_string columnize\(
+find_grep.py --filename_mask .py$ --search_string '^@'
+find_grep.py --filename_mask .py$ --search_string '^\[ 	\]*@'
+find_grep.py --filename_mask .py$ --search_string decor
+find_grep.py --filename_mask .py$ --search_string '= run_command' 2>&1 | tee foo_run_command
